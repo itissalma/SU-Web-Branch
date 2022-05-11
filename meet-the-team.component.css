@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Exo;
+} 
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f1f0;
+}
+.profile-card{
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: #2da25e;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: .6s;
+  margin: 0 25px;
+}
+.profile-card:hover{
+  border-radius: 10px;
+  height: 400px;
+}
+.profile-card .img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: .6s;
+  z-index: 99;
+}
+.profile-card:hover .img{
+  transform: translateY(-60px);
+}
+.img img{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: .6s;
+}
+.profile-card:hover img{
+  border-radius: 10px;
+}
+.caption{
+  text-align: center;
+  transform: translateY(-120px);
+  margin-bottom: 5px;
+  opacity: 0;
+  transition: .6s;
+}
+.profile-card:hover .caption{
+  opacity: 1;
+}
+.caption h3{
+  font-size: 21px;
+}
+.caption p{
+  font-size: 16px;
+  color: rgb(58, 58, 58);
+  margin: 0.5px 0 5px 0;
+}
+.meet-the-team-heading{
+  color: grey !important;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+.button {
+  padding-top: 20px;
+ text-decoration: none;
+ font-size: 16px;
+ border-radius: 9px;
+ padding: 8px 40px;
+ background-color: rgb(58, 58, 58);
+ color: white;
+}
+.button:hover{
+  background-color: white;
+  color: rgb(58, 58, 58);
+  transition: 0.65s;
+}
